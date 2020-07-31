@@ -4,8 +4,10 @@
         <meta charset="utf-8">
         <title>Quaranteen Feelings</title>
         <style>
+            :root {
+                //for variables
+            }
             h1 {
-                font-family: "Lucida courier", Courier, monospace;
                 color: rgb(208, 100, 100);
                 text-align: center;
                 font-size: 40px;
@@ -13,19 +15,24 @@
                 margin: 0px;
             }
             h2 {
-                font-family: "Lucida courier", Courier, monospace;
                 color: rgb(174, 79, 79);
                 text-align: center;
                 font-variant: small-caps;
                 font-size: x-large;
             }
             p {
-                color: rgb();
-                font-family: ;
+                color: rgb(242, 163, 163);
+                font-size: x-large;
+                font-weight: bold;
+                font-variant: small-caps;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                z-index: 2;
             }
             body {
                 background-color: rgb(255, 241, 219);
-                padding: 30px
+                padding: 30px;
+                font-family: "Lucida courier", Courier, monospace;
             }
             #name {
                 color: rgb(255, 154, 154);
@@ -35,22 +42,16 @@
                 top: 30px;
             }
             #bored {
-                position: absolute;
                 top: 50%;
                 left: 25%;
-                transform: translate(-50%, -50%);
             }
             #lazy {
-                position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%, -50%);
             }
             #anxious {
-                position: absolute;
                 top: 50%;
                 left: 75%;
-                transform: translate(-50%, -50%);
             }
             .circle {
                 background: white;
@@ -58,27 +59,20 @@
                 width: 100px;
                 height: 100px;
                 position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -27%);
+                transform: translate(-50%, -24%);
+                z-index: 1;
             }
             #c1 {
-                position: absolute;
                 top: 50%;
                 left: 25%;
-                transform: translate(-50%, -27%);
             }
             #c2 {
-                position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%, -27%);
             }
             #c3 {
-                position: absolute;
                 top: 50%;
                 left: 75%;
-                transform: translate(-50%, -27%);
             }
         </style>
     </head>
@@ -93,8 +87,8 @@
         <span class = "circle" id = "c2"></span>
         <span class = "circle" id = "c3"></span>
 
-        <h2 id = "bored">bored</h2>
-        <h2 id = "lazy">lazy</h2>
-        <h2 id = "anxious">anxious</h2>
+        <p id = "bored">bored</p>
+        <p id = "lazy">lazy</p>
+        <p id = "anxious">anxious</p>
     </body>
 </html>
