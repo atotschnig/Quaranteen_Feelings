@@ -12,6 +12,58 @@
                 background-color: rgb(255, 241, 219);
                 font-family: "Lucida courier", Courier, monospace;
             }
+            p {
+                color: rgb(242, 163, 163);
+                font-size: x-large;
+                font-weight: bold;
+                font-variant: small-caps;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+            }
+            #bored {
+                top: 80%;
+                left: 50%;
+            }
+
+            /* Split the screen in half */
+            .split {
+                height: 100%;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                overflow-x: hidden;
+                padding-top: 20px;
+            }
+
+            .left {
+                width: 40%;
+                left: 0;
+            }
+            .right {
+                width: 60%;
+                right: 0;
+            }
+
+            .circle {
+                background: white;
+                border-radius: 50%;
+                width: 25vw;
+                height: 25vw;
+                position: absolute;
+                transform: translate(-50%, -24%);
+                z-index: 1;
+                top: 40%;
+                left: 50%;
+            }
+
+            .list {
+                width: 40vw;
+                position: absolute;
+                top: 50%;
+                left: 40%;
+                text-align: left;
+            }
         </style>
     </head>
     <body>
@@ -29,5 +81,14 @@
                     </li>
                 </ul>
         </nav>
+
+        <div class="split left">
+            <span class = "circle"></span>
+            <p id = "bored">bored</p>
+        </div>
+
+        <div class="split right">
+            <p class = "list">Go through your camera roll, pick your favorite pics from the past year and make a photo book or order framed versions online. </p>
+        </div>
     </body>
 </html>
