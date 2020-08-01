@@ -21,6 +21,18 @@
                 transform: translate(-50%, -50%);
                 z-index: 2;
             }
+
+            .list {
+              position: absolute;
+              top: 33%;
+              left: 10%;
+              text-align: left;
+              color: rgb(242, 163, 163);
+              font-size: x-large;
+              font-weight: bold;
+              font-variant: small-caps;
+            }
+
             #bored {
                 top: 80%;
                 left: 50%;
@@ -37,12 +49,12 @@
             }
 
             .left {
-                width: 40%;
+                width: 37%;
                 left: 0;
             }
             .right {
-                width: 60%;
-                right: 0;
+                width: 55%;
+                right: 8%;
             }
 
             .circle {
@@ -55,14 +67,6 @@
                 z-index: 1;
                 top: 40%;
                 left: 50%;
-            }
-
-            .list {
-                width: 40vw;
-                position: absolute;
-                top: 50%;
-                left: 40%;
-                text-align: left;
             }
         </style>
     </head>
@@ -88,7 +92,11 @@
         </div>
 
         <div class="split right">
-            <p class = "list">Go through your camera roll, pick your favorite pics from the past year and make a photo book or order framed versions online. </p>
+            <ul class="list">
+              <li>Go through your camera roll, pick your favorite pics from the past year and make a photo book or order framed versions online.</li>
+              <li>Go through your camera roll, pick your favorite pics from the past year and make a photo book or order framed versions online.</li>
+              <li>Go through your camera roll, pick your favorite pics from the past year and make a photo book or order framed versions online.</li>
+            </ul>
         </div>
     </body>
 </html>
