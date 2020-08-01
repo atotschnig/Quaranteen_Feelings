@@ -2,24 +2,93 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>    </title>
+        <title>Quaranteen Feelings</title>
         <style>
-            h2{
-                font-family: ;
-                font-style: ;
-                color:rgb();
+            :root {
+                //for variables
             }
-            p{
-                color: rgb();
-                font-family: ;
+            h1 {
+                color: rgb(208, 100, 100);
+                text-align: center;
+                font-size: 40px;
+                padding: 0px;
+                margin: 0px;
             }
-            body{
-                background-color: rgb();
+            h2 {
+                color: rgb(174, 79, 79);
+                text-align: center;
+                font-variant: small-caps;
+                font-size: x-large;
+            }
+            p {
+                color: rgb(242, 163, 163);
+                font-size: x-large;
+                font-weight: bold;
+                font-variant: small-caps;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+            }
+            body {
+                background-color: rgb(255, 241, 219);
+                padding: 30px;
+                font-family: "Lucida courier", Courier, monospace;
+            }
+            #name {
+                color: rgb(255, 154, 154);
+            }
+            #titles {
+                position: relative;
+                top: 30px;
+            }
+            #bored {
+                top: 50%;
+                left: 25%;
+            }
+            #lazy {
+                top: 50%;
+                left: 50%;
+            }
+            #anxious {
+                top: 50%;
+                left: 75%;
+            }
+            .circle {
+                background: white;
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                transform: translate(-50%, -24%);
+                z-index: 1;
+            }
+            #c1 {
+                top: 50%;
+                left: 25%;
+            }
+            #c2 {
+                top: 50%;
+                left: 50%;
+            }
+            #c3 {
+                top: 50%;
+                left: 75%;
             }
         </style>
     </head>
-    
+
     <body>
-    
+        <div id = "titles">
+        <h2>Welcome to <span id = "name">Quaranteen Feelings</span></h1>
+        <h1>How are you feeling today?</h2>
+        </div>
+
+        <span class = "circle" id = "c1"></span>
+        <span class = "circle" id = "c2"></span>
+        <span class = "circle" id = "c3"></span>
+
+        <p id = "bored">bored</p>
+        <p id = "lazy">lazy</p>
+        <p id = "anxious">anxious</p>
     </body>
 </html>
