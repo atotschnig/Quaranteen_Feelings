@@ -5,14 +5,71 @@
         <title>Quaranteen Feelings - Lonely</title>
         <style>
             .nav-link:hover{
-                text-decoration:underline;
+                background-color:rgb(174, 79, 79);
             }
             body {
                 background-color: rgb(255, 241, 219);
                 font-family: "Lucida courier", Courier, monospace;
             }
-        </style>
+            p {
+                color: rgb(242, 163, 163);
+                font-size: x-large;
+                font-weight: bold;
+                font-variant: small-caps;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+            }
 
+            .list {
+              position: absolute;
+              top: 33%;
+              left: 10%;
+              text-align: left;
+              color: rgb(242, 163, 163);
+              font-size: x-large;
+              font-weight: bold;
+              font-variant: small-caps;
+            }
+
+            #lonely {
+                top: 80%;
+                left: 50%;
+            }
+
+            /* Split the screen in half */
+            .split {
+                height: 100%;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                overflow-x: hidden;
+                padding-top: 20px;
+            }
+
+            .left {
+                width: 37%;
+                left: 0;
+            }
+            .right {
+                width: 55%;
+                right: 8%;
+            }
+
+            .circle {
+                background: white;
+                border-radius: 50%;
+                width: 25vw;
+                height: 25vw;
+                position: absolute;
+                transform: translate(-50%, -24%);
+                z-index: 1;
+                top: 40%;
+                left: 50%;
+            }
+            .navbar-brand:hover{            
+                text-decoration: underline;
+            }
         </style>
     </head>
     <body>
@@ -29,7 +86,18 @@
                         <a href= "bored.html" class="nav-link">Bored</a>
                     </li>
                 </ul>
-            
         </nav>
+        <div class="split left">
+            <span class = "circle"></span>
+            <p id = "lonely">lonely</p>
+        </div>
+
+        <div class="split right">
+            <ul class="list">
+              <li>Join an online community. Be it a subreddit of your favourite comic book or a discord server for a fun video game, join an online community where you can find like minded people to have fun with!</li>
+              <li>Go on a socially distanced walk or bike ride with your friends. Enjoy the fresh air and companionship. This will give you a change of scenery and you'll get to spend time with the people you love the most.</li>
+              <li>Call people you have lost touch with. Be it family, friends, colleagues or acquaintances, reconnect to gain extra comfort and support. Every bit of love goes a long way!</li>
+            </ul>
+        </div>
     </body>
 </html>
