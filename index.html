@@ -22,12 +22,12 @@
             }
             p {
                 color: rgb(242, 163, 163);
-                font-size: 2vw;
+                font-size: 2.5vw;
                 font-weight: bold;
                 font-variant: small-caps;
                 position: absolute;
                 transform: translate(-50%, -50%);
-                z-index: 2;
+                z-index: 3;
             }
             body {
                 background-color: rgb(255, 241, 219);
@@ -42,15 +42,15 @@
                 top: 30px;
             }
             #bored {
-                top: 79%;
+                top: 75%;
                 left: 25%;
             }
             #lonely {
-                top: 79%;
+                top: 75%;
                 left: 50%;
             }
             #anxious {
-                top: 79%;
+                top: 75%;
                 left: 75%;
             }
             .circle {
@@ -59,7 +59,7 @@
                 width: 20vw;
                 height: 20vw;
                 position: absolute;
-                transform: translate(-50%, -24%);
+                transform: translate(-50%, -30%);
                 z-index: 1;
             }
             #c1 {
@@ -79,24 +79,24 @@
                 top: 50%;
                 left: 25%;
                 height: 15vw;
-                transform: translate(-50%, -18%);
-                z-index: 3;
+                transform: translate(-50%, -26%);
+                z-index: 2;
             }
             #image-lonely {
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 height: 18vw;
-                transform: translate(-50%, -20%);
-                z-index: 3;
+                transform: translate(-50%, -28%);
+                z-index: 2;
             }
             #image-anxious {
                 position: absolute;
                 top: 50%;
                 left: 75%;
-                width: 17.5vw;
-                transform: translate(-50%, -22%);
-                z-index: 3;
+                width: 18vw;
+                transform: translate(-50%, -30%);
+                z-index: 2;
             }
         </style>
     </head>
@@ -115,8 +115,14 @@
         <a href = lonely.html><p id = "lonely">lonely</p></a>
         <a href = anxious.html><p id = "anxious">anxious</p></a>
 
-        <img src = "images/bored.png" alt = "bored person" href = bored.html id = "image-bored">
-        <img src = "images/lonely.png" alt = "lonely person" href = lonely.html id = "image-lonely">
-        <img src = "images/anxious.png" alt = "anxious person" href = anxious.html id = "image-anxious">
+        <a href = bored.html>
+        <img src = "images/bored.png" alt = "bored person" id = "image-bored">
+        </a>
+        <a href = lonely.html></a>
+        <img src = "images/lonely.png" alt = "lonely person" id = "image-lonely">
+        </a>
+        <a href = anxious.html>
+        <img src = "images/anxious.png" alt = "anxious person" id = "image-anxious">
+        </a>
     </body>
 </html>
