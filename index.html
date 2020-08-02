@@ -4,6 +4,22 @@
         <meta charset="utf-8">
         <title>Quaranteen Feelings</title>
         <style>
+            .circle:hover{
+                width: 21vw;
+                height: 21vw;
+            }
+            #image-bored:hover + #c1 {
+                width: 21vw;
+                height: 21vw;
+            }
+            #image-lonely:hover + #c2 {
+                width: 21vw;
+                height: 21vw;
+            }
+            #image-anxious:hover + #c3 {
+                width: 21vw;
+                height: 21vw;
+            }
             h1 {
                 color: rgb(208, 100, 100);
                 text-align: center;
@@ -102,22 +118,21 @@
         <h1>How are you feeling today?</h2>
         </div>
 
-        <a href = bored.html><span class = "circle" id = "c1"></span></a>
-        <a href = lonely.html><span class = "circle" id = "c2"></span></a>
-        <a href = anxious.html><span class = "circle" id = "c3"></span></a>
+        <a href = bored.html>
+            <img src = "images/bored.png" alt = "bored person" id = "image-bored">
+            <span class = "circle" id = "c1"></span>
+        </a>
+        <a href = lonely.html>
+            <img src = "images/lonely.png" alt = "lonely person" id = "image-lonely">
+            <span class = "circle" id = "c2"></span>
+        </a>
+        <a href = anxious.html>
+            <img src = "images/anxious.png" alt = "anxious person" id = "image-anxious">
+            <span class = "circle" id = "c3"></span>
+        </a>
 
         <a href = bored.html><p id = "bored">bored</p></a>
         <a href = lonely.html><p id = "lonely">lonely</p></a>
         <a href = anxious.html><p id = "anxious">anxious</p></a>
-
-        <a href = bored.html>
-        <img src = "images/bored.png" alt = "bored person" id = "image-bored">
-        </a>
-        <a href = lonely.html>
-        <img src = "images/lonely.png" alt = "lonely person" id = "image-lonely">
-        </a>
-        <a href = anxious.html>
-        <img src = "images/anxious.png" alt = "anxious person" id = "image-anxious">
-        </a>
     </body>
 </html>
