@@ -7,6 +7,9 @@
             .nav-link:hover{
                 background-color:rgb(174, 79, 79);
             }
+            .nav-link {
+                font-size: 1.8vw;
+            }
             body {
                 background-color: rgb(255, 241, 219);
                 font-family: "Lucida courier", Courier, monospace;
@@ -23,11 +26,11 @@
 
             .list {
               position: absolute;
-              top: 30%;
+              top: 28%;
               left: 10%;
               text-align: left;
-              color: rgb(242, 163, 163);
-              font-size: x-large;
+              color: rgb(224, 115, 115);
+              font-size: 2.4vw;
               font-weight: bold;
               font-variant: small-caps;
             }
@@ -35,6 +38,16 @@
             #lonely {
                 top: 80%;
                 left: 50%;
+                font-size: 2.5vw;
+            }
+
+            #image-lonely {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 20vw;
+                transform: translate(-50%, -43%);
+                z-index: 2;
             }
 
             /* Split the screen in half */
@@ -62,9 +75,9 @@
                 width: 25vw;
                 height: 25vw;
                 position: absolute;
-                transform: translate(-50%, -24%);
+                transform: translate(-50%, -45%);
                 z-index: 1;
-                top: 40%;
+                top: 50%;
                 left: 50%;
             }
             .navbar-brand:hover{
@@ -90,12 +103,13 @@
         <div class="split left">
             <span class = "circle"></span>
             <p id = "lonely">LONELY</p>
+            <img src = "images/lonely.png" alt = "lonely person" id = "image-lonely">
         </div>
 
         <div class="split right">
             <ul class="list">
-              <li>Join an online community. Be it a subreddit of your favourite comic book or a discord server for a fun video game, join an online community where you can find like minded people to have fun with!</li>
-              <li>Go on a socially distanced walk or bike ride with your friends. Enjoy the fresh air and companionship. This will give you a change of scenery and you'll get to spend time with the people you love the most.</li>
+              <li>Join an online community. Be it a subreddit of your favourite comic book or a discord server for a fun video game, there is an online community where you can find like minded people to have fun with!</li>
+              <li>Go on a socially distanced walk or bike ride with your friends. Enjoy the fresh air and companionship. Get a change of scenery and spend time with the people you love the most.</li>
               <li>Call people you have lost touch with. Be it family, friends, colleagues or acquaintances, reconnect to gain extra comfort and support. Every bit of love goes a long way!</li>
             </ul>
         </div>

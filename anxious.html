@@ -7,7 +7,9 @@
             .nav-link:hover{
                 background-color:rgb(174, 79, 79);
             }
-
+            .nav-link {
+                font-size: 1.8vw;
+            }
             body {
                 background-color: rgb(255, 241, 219);
                 font-family: "Lucida courier", Courier, monospace;
@@ -24,11 +26,11 @@
 
             .list {
               position: absolute;
-              top: 33%;
+              top: 28%;
               left: 10%;
               text-align: left;
-              color: rgb(242, 163, 163);
-              font-size: x-large;
+              color: rgb(224, 115, 115);
+              font-size: 2.4vw;
               font-weight: bold;
               font-variant: small-caps;
             }
@@ -36,6 +38,16 @@
             #anxious {
                 top: 80%;
                 left: 50%;
+                font-size: 2.5vw;
+            }
+
+            #image-anxious {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 21vw;
+                transform: translate(-50%, -43%);
+                z-index: 2;
             }
 
             /* Split the screen in half */
@@ -63,9 +75,9 @@
                 width: 25vw;
                 height: 25vw;
                 position: absolute;
-                transform: translate(-50%, -24%);
+                transform: translate(-50%, -45%);
                 z-index: 1;
-                top: 40%;
+                top: 50%;
                 left: 50%;
             }
             .navbar-brand:hover{
@@ -92,13 +104,16 @@
         <div class="split left">
             <span class = "circle"></span>
             <p id = "anxious">ANXIOUS</p>
+            <img src = "images/anxious.png" alt = "anxious person" id = "image-anxious">
         </div>
+
+        
 
         <div class="split right">
             <ul class="list">
-              <li>Don't forget to breathe! Try some yoga and meditation while staying home. It will help you keep up your physical and mental health both at once.</li>
-              <li>Take the time to write your thoughts down on paper. It will help you see clearer.</li>
-              <li>Take your mind off things by watching a funny video or doing something you enjoy. Don't forget to take breaks away from your phone!</li>
+              <li>Don't forget to breathe! Try some yoga and meditation while staying home. It will help you keep up both your physical and mental health at the same time.</li>
+              <li>Take the time to write your thoughts down on paper. It will help you see more clearly.</li>
+              <li>Take your mind off of things by watching a funny video or doing something you enjoy. Don't forget to take breaks away from your phone!</li>
             </ul>
         </div>
     </body>

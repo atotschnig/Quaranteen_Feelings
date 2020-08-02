@@ -8,28 +8,30 @@
                 background-color:rgb(174, 79, 79);
             }
 
+            .nav-link {
+                font-size: 1.8vw;
+            }
             body {
                 background-color: rgb(255, 241, 219);
                 font-family: "Lucida courier", Courier, monospace;
             }
-
             p {
                 color: rgb(242, 163, 163);
                 font-size: x-large;
                 font-weight: bold;
                 font-variant: small-caps;
-                position: absolute;
                 transform: translate(-50%, -50%);
+                position: absolute;
                 z-index: 2;
             }
 
             .list {
               position: absolute;
-              top: 33%;
+              top: 28%;
               left: 10%;
               text-align: left;
-              color: rgb(242, 163, 163);
-              font-size: x-large;
+              color: rgb(224, 115, 115);
+              font-size: 2.4vw;
               font-weight: bold;
               font-variant: small-caps;
             }
@@ -37,6 +39,16 @@
             #bored {
                 top: 80%;
                 left: 50%;
+                font-size: 2.5vw;
+            }
+
+            #image-bored {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 16vw;
+                transform: translate(-50%, -43%);
+                z-index: 2;
             }
 
             /* Split the screen in half */
@@ -64,9 +76,9 @@
                 width: 25vw;
                 height: 25vw;
                 position: absolute;
-                transform: translate(-50%, -24%);
+                transform: translate(-50%, -45%);
                 z-index: 1;
-                top: 40%;
+                top: 50%;
                 left: 50%;
             }
             .navbar-brand:hover{
@@ -93,6 +105,7 @@
         <div class="split left">
             <span class = "circle"></span>
             <p id = "bored">BORED</p>
+            <img src = "images/bored.png" alt = "bored person" id = "image-bored">
         </div>
 
         <div class="split right">
